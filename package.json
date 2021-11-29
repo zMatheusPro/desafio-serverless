@@ -1,0 +1,36 @@
+{
+  "name": "ignite-desafio-serverless",
+  "version": "1.0.0",
+  "description": "Desafio do Ignite de NodeJS da Rockseat",
+  "scripts": {
+    "dev": "serverless offline",
+    "dynamo:start": "serverless dynamodb start",
+    "deploy": "serverless deploy --verbose"
+  },
+  "dependencies": {
+    "@middy/core": "^2.5.3",
+    "@middy/http-json-body-parser": "^2.5.3",
+    "aws-lambda": "^1.0.7",
+    "aws-sdk": "^2.1035.0",
+    "babel-loader": "^8.2.2",
+    "source-map-support": "^0.5.21",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@serverless/typescript": "^2.23.0",
+    "@types/aws-lambda": "^8.10.71",
+    "@types/node": "^14.14.25",
+    "json-schema-to-ts": "^1.5.0",
+    "serverless": "^2.23.0",
+    "serverless-dynamodb-local": "^0.2.39",
+    "serverless-esbuild": "^1.17.1",
+    "serverless-offline": "^6.9.0",
+    "serverless-webpack": "^5.4.1",
+    "ts-loader": "^8.0.15",
+    "ts-node": "^10.4.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.1.3",
+    "webpack": "^5.20.2",
+    "webpack-node-externals": "^2.5.2"
+  }
+}
